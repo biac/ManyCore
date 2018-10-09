@@ -11,4 +11,4 @@ UI 部分は、フレームワークが UWP に変わったことに加えて、
 - [Win10VS2017/**Part04Chapter04**/](./Win10VS2017/Part04Chapter04): PART 4 Chapter 4　ロジックを並列化する
 - [Win10VS2017/**Part04Chapter05**/](./Win10VS2017/Part04Chapter05): PART 4 Chapter 5　ロジックを改良する
 
-![スクリーンキャプチャー](./images/Win10VS2017_Part04Chapter05_01)
+![スクリーンキャプチャー](./images/Win10VS2017_Part04Chapter05_01.png)
