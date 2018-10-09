@@ -1,0 +1,52 @@
+﻿<Page
+  x:Class="ManyCore0403.CellularAutomaton.MainPage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="using:ManyCore0403.CellularAutomaton"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d"
+  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+  xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+  >
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="20" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="220" />
+    </Grid.ColumnDefinitions>
+
+    <Grid Grid.Column="1" VerticalAlignment="Center"
+          >
+      <Viewbox MaxWidth="518" MaxHeight="518">
+        <Border BorderBrush="#c0c0c0" BorderThickness="3">
+          <canvas:CanvasControl x:Name="Canvas1"
+            CreateResources="CanvasControl_CreateResources"
+            Draw="CanvasControl_Draw" 
+            ClearColor="CornflowerBlue" Width="512" Height="512"
+            />
+        </Border>
+      </Viewbox>
+    </Grid>
+
+    <Grid Grid.Column="2" MaxHeight="512" Margin="10,0,20,0" >
+      <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition />
+      </Grid.RowDefinitions>
+      <StackPanel Grid.Row="0">
+        <TextBlock Text="サイクルタイム:" FontSize="15"  />
+        <TextBlock x:Name="textCycleTime" Text="0.0000秒" FontSize="18" HorizontalAlignment="Right" />
+        <TextBlock Text="描画率 (表示回数/計算回数):" FontSize="15" Margin="0,10,0,0" />
+        <TextBlock x:Name="textDrawRate" Text="100% (0/0)" FontSize="18" HorizontalAlignment="Right" />
+      </StackPanel>
+      <StackPanel Grid.Row="1" VerticalAlignment="Bottom">
+        <Button Content="RESET" Tapped="ResetButton_Tapped"
+                  FontSize="18" HorizontalAlignment="Right" Width="100" Margin="0,0,0,40" />
+        <Button Content="START" Tapped="StartStopButton_Tapped"
+                  FontSize="18" HorizontalAlignment="Right" Width="100" TabIndex="0" />
+      </StackPanel>
+    </Grid>
+  </Grid>
+</Page>
