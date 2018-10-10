@@ -10,5 +10,13 @@ UI 部分は、フレームワークが UWP に変わったことに加えて、
 - [Win10VS2017/**Part04Chapter03**/](./Win10VS2017/Part04Chapter03): PART 4 Chapter 3　ロジックと画面を非同期化する
 - [Win10VS2017/**Part04Chapter04**/](./Win10VS2017/Part04Chapter04): PART 4 Chapter 4　ロジックを並列化する
 - [Win10VS2017/**Part04Chapter05**/](./Win10VS2017/Part04Chapter05): PART 4 Chapter 5　ロジックを改良する
+  
+なお、UWP アプリは、リリースビルドではネイティブコンパイルされます。リリースビルドには時間が掛かりますが、それによる高速化の効果も確かめてみてください。
+  
+● **PART 4 Chapter 2** (デバッグビルド)  
+![スクリーンキャプチャー](./images/Win10VS2017_Part04Chapter05_02.png)
 
+**⇩**
+
+● **PART 4 Chapter 5** (リリースビルド)  
 ![スクリーンキャプチャー](./images/Win10VS2017_Part04Chapter05_01.png)
